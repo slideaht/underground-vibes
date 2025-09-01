@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underground Vibes</title>
+  <style>
+    body {
+      background-color: #050505;
+      color: #FFFFFF;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* --- Menu Bar Styling --- */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #E81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0A0202;
+      color: white;
+    }
+
+    /* --- Main Header --- */
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #e50914;
+      margin: 0;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* --- Table Styling --- */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    th {
+      background-color: #222;
+      color: #e50914;
+    }
+
+    td {
+      background-color: #1a1a1a;
+    }
+
+    tr:hover td {
+      background-color: #2a2a2a;
+    }
+
+    @media screen and (max-width: 768px) {
+      table, th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+
+    /* --- Image Gallery --- */
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="artists.html" class="active">Artists</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="upcoming.html">Upcoming</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Header -->
+  <header>
+    <h1>Artists</h1>
+    <p>Discover Raw, Unfiltered Artists</p>
+  </header>
+
+  <!-- Content Area -->
+  <div class="container">
+    <p>Here are the top artists of this month:</p>
+
+    <!-- Artist Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Artist Name</th>
+          <th>Genre</th>
+          <th>Latest Release</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LUCKI</td>
+          <td>Rap</td>
+          <td>September 2025</td>
+        </tr>
+        <tr>
+          <td>Nine Vicious</td>
+          <td>Rap / Trap</td>
+          <td>August 2025</td>
+        </tr>
+        <tr>
+          <td>Autumn!</td>
+          <td>Hip Hop</td>
+          <td>July 2025</td>
+        </tr>
+        <tr>
+          <td>LAZER DIM 700</td>
+          <td>Electronic</td>
+          <td>June 2025</td>
+        </tr>
+        <tr>
+          <td>Hurricane Wisdom</td>
+          <td>Rap</td>
+          <td>May 2025</td>
+        </tr>
+        <tr>
+          <td>Glokk40Spaz</td>
+          <td>Trap</td>
+          <td>April 2025</td>
+        </tr>
+        <tr>
+          <td>Nino Paid</td>
+          <td>Rap / Hip Hop</td>
+          <td>March 2025</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Image Gallery -->
+    <p>Check out the images of the top artists this month:</p>
+    <div class="image-gallery">
+      <img src="images/artist1.jpeg" alt="LUCKI">
+      <img src="images/artist2.jpeg" alt="Nine Vicious">
+      <img src="images/artist3.jpeg" alt="Autumn!">
+      <img src="images/artist4.jpeg" alt="LAZER DIM 700">
+      <img src="images/artist5.jpeg" alt="Hurricane Wisdom">
+      <img src="images/artist6.jpeg" alt="Glokk40Spaz">
+      <img src="images/artist7.jpeg" alt="Nino Paid">
+      <img src="images/artist8.jpeg" alt="Artist 8">
+      <img src="images/artist9.jpeg" alt="Artist 9">
+      <img src="images/artist10.jpeg" alt="Artist 10">
+    </div>
+  </div>
+
+</body>
+</html>
