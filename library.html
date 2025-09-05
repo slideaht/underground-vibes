@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Underground Vibes</title>
   <style>
-
-
-
-   body {
+    body {
       background-color: #050505;
       color: #FFFFFF;
       font-family: 'Arial', sans-serif;
@@ -39,145 +32,145 @@
       margin: auto;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    th, td {
-      border: 1px solid #333;
-      padding: 12px;
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      transition: background 0.3s;
     }
 
-    th {
-      background-color: #222;
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #E81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0A0202;
+      color: white;
+    }
+
+    h2, h3 {
       color: #e50914;
     }
 
-    td {
-      background-color: #1a1a1a;
+    ul, ol {
+      padding-left: 40px;
     }
 
-    tr:hover td {
-      background-color: #2a2a2a;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    @media screen and (max-width: 768px) {
-      table, th, td {
-        font-size: 12px;
-        padding: 8px;
-      }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #333;
+      border-radius: 5px;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 5px;
     }
   </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page with Menu Bar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; /* Remove default body margin */
-            background-color: #611404;
-            color: #FFEDED;
-        }
-
-        /* --- Menu Bar Styling --- */
-        nav {
-            background-color: #333; /* Dark background for the navigation bar */
-            overflow: hidden; /* Clears floats inside and contains children */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow below the bar */
-        }
-
-        nav ul {
-            list-style-type: none; /* Removes bullet points */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center the menu items if space allows */
-        }
-
-        nav ul li {
-            display: inline-block; /* Makes list items display horizontally */
-            /* Using inline-block ensures vertical alignment and allows padding/margin */
-        }
-
-        nav ul li a {
-            display: block; /* Make the entire link area clickable */
-            color: white; /* White text color for links */
-            text-align: center;
-            padding: 14px 20px; /* Padding around the text inside each link */
-            text-decoration: none; /* Removes the underline from links */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-
-        /* Change the background color of links on hover */
-        nav ul li a:hover {
-            background-color: #575757; /* Slightly lighter dark grey on hover */
-            color: #E81313; /* Red color for text on hover */
-        }
-
-        /* Active link styling (optional) */
-        nav ul li a.active {
-            background-color:#0A0202; /* Black background for the active link */
-            color: white;
-        }
-
-
-        /* --- Content Area Styling (just for demonstration) --- */
-        .content {
-            padding: 40px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #FFFFFF;
-        }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="upcoming.html">Upcoming</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="upcoming.html">Upcoming</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
-<h1>Liked Songs</h1>
-  <p>Here are liked songs of this month</p>
-  </header>             
-<ul>
-<li>Slatt Gospel-Nine Vicious</li>
-<li>Slide Aht-Nine Vicious</li>
-<li>Teary Eyed-Chuckyy</li>
-<li>WTM-LAZER DIM 700</li>
-<li>Salute-Hurricane Wisdom</li>
-<li>Gemini Love-LUCKI</li>
-<li>PAIDNFULL-LUCKI</li>
-</ul>
-<h2>Playlists</h2>
-<ol>
-<li>TUNESKIII</li>
-<li>Daily Mix 1</li>
-<li>Hip Hop Mix</li>
-</ol>
-<h3>Albums</h3>
-<p>Here are some of your favorite albums from various artists</p>
-<img src="C:\Users\25-1737\Desktop\website\images\flm.jpeg" alt="flm.jpeg">
-<img src="C:\Users\25-1737\Desktop\website\images\fn.jpeg" alt="fn.jpeg">
-<img src="C:\Users\25-1737\Desktop\website\images\smd.jpeg" alt="smd.jpeg">
+    <h1>Liked Songs</h1>
+    <p>Here are liked songs of this month</p>
+  </header>
 
+  <div class="container">
 
+    <ul>
+      <li>Slatt Gospel - Nine Vicious</li>
+      <li>Slide Aht - Nine Vicious</li>
+      <li>Teary Eyed - Chuckyy</li>
+      <li>WTM - LAZER DIM 700</li>
+      <li>Salute - Hurricane Wisdom</li>
+      <li>Gemini Love - LUCKI</li>
+      <li>PAIDNFULL - LUCKI</li>
+    </ul>
 
+    <h2>Playlists</h2>
+    <ol>
+      <li>TUNESKIII</li>
+      <li>Daily Mix 1</li>
+      <li>Hip Hop Mix</li>
+    </ol>
 
-  
+    <h3>Albums</h3>
+    <p>Here are some of your favorite albums from various artists</p>
+
+    <div class="gallery">
+      <img src="images/flm.jpeg" alt="Album FLM">
+      <img src="images/fn.jpeg" alt="Album FN">
+      <img src="images/smd.jpeg" alt="Album SMD">
+      <!-- Add 7 more artist-related images -->
+      <img src="images/lucki1.jpg" alt="LUCKI">
+      <img src="images/lucki2.jpg" alt="LUCKI">
+      <img src="images/ninevicious1.jpg" alt="Nine Vicious">
+      <img src="images/ninevicious2.jpg" alt="Nine Vicious">
+      <img src="images/lazerdim700.jpg" alt="LAZER DIM 700">
+      <img src="images/chuckyy.jpg" alt="Chuckyy">
+      <img src="images/hurricane.jpg" alt="Hurricane Wisdom">
+    </div>
+
+    <h2>Artist Videos</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/Zm5zNE1ebZ4" title="LUCKI - Gemini Love"></iframe>
+      <iframe src="https://www.youtube.com/embed/JDcuRgk-JEI" title="LUCKI - Faith"></iframe>
+      <iframe src="https://www.youtube.com/embed/nRr0K6cdqpg" title="Nine Vicious - Slatt Gospel"></iframe>
+      <iframe src="https://www.youtube.com/embed/VdQY7BusJNU" title="Chuckyy - Teary Eyed"></iframe>
+      <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Hurricane Wisdom - Salute (sample)"></iframe>
+    </div>
+
+  </div>
+
 </body>
 </html>
-
-
