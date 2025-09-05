@@ -1,23 +1,53 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Underground Vibes</title>
   <style>
-
-
-
-   body {
+    body {
       background-color: #050505;
       color: #FFFFFF;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #E81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0A0202;
+      color: white;
     }
 
     header {
@@ -49,7 +79,7 @@
       border: 1px solid #333;
       padding: 12px;
       text-align: center;
-      transition: background 0.3s;
+      background-color: #1a1a1a;
     }
 
     th {
@@ -57,12 +87,12 @@
       color: #e50914;
     }
 
-    td {
-      background-color: #1a1a1a;
-    }
-
     tr:hover td {
       background-color: #2a2a2a;
+    }
+
+    iframe {
+      max-width: 100%;
     }
 
     @media screen and (max-width: 768px) {
@@ -72,175 +102,86 @@
       }
     }
   </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page with Menu Bar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; /* Remove default body margin */
-            background-color: #611404;
-            color: #FFEDED;
-        }
-
-        /* --- Menu Bar Styling --- */
-        nav {
-            background-color: #333; /* Dark background for the navigation bar */
-            overflow: hidden; /* Clears floats inside and contains children */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow below the bar */
-        }
-
-        nav ul {
-            list-style-type: none; /* Removes bullet points */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center the menu items if space allows */
-        }
-
-        nav ul li {
-            display: inline-block; /* Makes list items display horizontally */
-            /* Using inline-block ensures vertical alignment and allows padding/margin */
-        }
-
-        nav ul li a {
-            display: block; /* Make the entire link area clickable */
-            color: white; /* White text color for links */
-            text-align: center;
-            padding: 14px 20px; /* Padding around the text inside each link */
-            text-decoration: none; /* Removes the underline from links */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-
-        /* Change the background color of links on hover */
-        nav ul li a:hover {
-            background-color: #575757; /* Slightly lighter dark grey on hover */
-            color: #E81313; /* Red color for text on hover */
-        }
-
-        /* Active link styling (optional) */
-        nav ul li a.active {
-            background-color:#0A0202; /* Black background for the active link */
-            color: white;
-        }
-
-
-        /* --- Content Area Styling (just for demonstration) --- */
-        .content {
-            padding: 40px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #FFFFFF;
-        }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="upcoming.html">Upcoming</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="upcoming.html">Upcoming</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  
-</body>
-</html>
-
-</head>
-<body>
-
+  <!-- Header -->
   <header>
     <h1>Underground Vibes</h1>
     <p>Discover Raw, Unfiltered Sound</p>
   </header>
 
+  <!-- Artists and Videos Table -->
   <div class="container">
-    <h2>Featured Tracks / Artists</h2>
+    <h2>My Favorite Underground Artists</h2>
     <table>
       <tr>
-        <th>#</th>
         <th>Artist</th>
-        <th>Track</th>
-        <th>Genre</th>
-        <th>Label</th>
-        <th>Release Date</th>
+        <th>Sample Video</th>
       </tr>
       <tr>
-        <td>1</td>
-        <td>DJ Shadowmelt</td>
-        <td>Deep Void</td>
-        <td>Dark Techno</td>
-        <td>Subterra</td>
-        <td>2025-08-01</td>
+        <td>Lucki</td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/yoKU-adT3kg" 
+          title="Lucki Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
       </tr>
       <tr>
-        <td>2</td>
-        <td>Basement Prophet</td>
-        <td>Static Pulse</td>
-        <td>Electro</td>
-        <td>NeoNoir</td>
-        <td>2025-08-03</td>
+        <td>Nine Vicious</td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/4HzQk7lJChY" 
+          title="Nine Vicious Video" frameborder="0" allowfullscreen></iframe>
+        </td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>Void Circuit</td>
-        <td>Echo Chamber</td>
-        <td>Industrial</td>
-        <td>RawTone</td>
-        <td>2025-08-06</td>
+        <td>2sdxrt3all</td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/pPP6jSPdqd0" 
+          title="2sdxrt3all Video" frameborder="0" allowfullscreen></iframe>
+        </td>
       </tr>
       <tr>
-        <td>4</td>
-        <td>Reverb Ritual</td>
-        <td>Gravebeat</td>
-        <td>Dubstep</td>
-        <td>Grimewave</td>
-        <td>2025-08-09</td>
+        <td>Che</td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/bFZB1KcAwJc" 
+          title="Che Video" frameborder="0" allowfullscreen></iframe>
+        </td>
       </tr>
       <tr>
-        <td>5</td>
-        <td>Drone Machine</td>
-        <td>Shadow Play</td>
-        <td>Ambient</td>
-        <td>DeepSpace</td>
-        <td>2025-08-12</td>
+        <td>Chuckyy</td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/f2n09nn2h4g" 
+          title="Chuckyy Video" frameborder="0" allowfullscreen></iframe>
+        </td>
       </tr>
       <tr>
-        <td>6</td>
-        <td>Midnight Glitch</td>
-        <td>Binary Fall</td>
-        <td>Experimental</td>
-        <td>LoFreq</td>
-        <td>2025-08-15</td>
+        <td>Loe Shimmy <br><small>(Honorable Mention)</small></td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/KJ3PYOjYVz8" 
+          title="Loe Shimmy Video" frameborder="0" allowfullscreen></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>Veeze <br><small>(Honorable Mention)</small></td>
+        <td>
+          <iframe width="300" height="169" src="https://www.youtube.com/embed/Y3XrnVIjvH8" 
+          title="Veeze Video" frameborder="0" allowfullscreen></iframe>
+        </td>
       </tr>
     </table>
   </div>
-<p>This are some images of the underground music scene</p>
-<img src="C:\Users\25-1737\Desktop\website\images\images (3).jpg">
-<img src="C:\Users\25-1737\Desktop\website\images\images (2).jpg">
-<img src="C:\Users\25-1737\Desktop\website\images\images (4).jpg">
-<p>My favorite underground artists include;</p>
-<ol>
-<li>Lucki</li>
-<li>Nine Vicious</li>
-<li>2sdxrt3all</li>
-<li>Che</li>
-<li>Chuckyy</li>
-</ol>
-<p>Honorable mentions biko include</p>
-<ul>
-<li>Loe Shimmy</li>
-<li>Veeze</li>
-</ul>
-<p>Here's a music video from LUCKI</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yoKU-adT3kg?si=RSt4x1tVMk9kebkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </body>
 </html>
-
