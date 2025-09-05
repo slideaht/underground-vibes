@@ -1,21 +1,14 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Underground Vibes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rags 2 Riches | Underground Vibes</title>
   <style>
-
-
-
-   body {
+    body {
       background-color: #050505;
-      color: #FFFFFF;
-      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
@@ -33,128 +26,125 @@
       margin: 0;
     }
 
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #e81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0a0202;
+      color: white;
+    }
+
     .container {
-      padding: 30px;
       max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
+      line-height: 1.7;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px auto;
+      border: 3px solid #e50914;
+      border-radius: 10px;
     }
 
-    th, td {
-      border: 1px solid #333;
-      padding: 12px;
-      text-align: center;
-      transition: background 0.3s;
-    }
-
-    th {
-      background-color: #222;
+    h2 {
       color: #e50914;
     }
 
-    td {
-      background-color: #1a1a1a;
-    }
-
-    tr:hover td {
-      background-color: #2a2a2a;
-    }
-
     @media screen and (max-width: 768px) {
-      table, th, td {
-        font-size: 12px;
-        padding: 8px;
+      nav ul li a {
+        padding: 10px 14px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 20px;
       }
     }
   </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page with Menu Bar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; /* Remove default body margin */
-            background-color: #611404;
-            color: #FFEDED;
-        }
-
-        /* --- Menu Bar Styling --- */
-        nav {
-            background-color: #333; /* Dark background for the navigation bar */
-            overflow: hidden; /* Clears floats inside and contains children */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow below the bar */
-        }
-
-        nav ul {
-            list-style-type: none; /* Removes bullet points */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center the menu items if space allows */
-        }
-
-        nav ul li {
-            display: inline-block; /* Makes list items display horizontally */
-            /* Using inline-block ensures vertical alignment and allows padding/margin */
-        }
-
-        nav ul li a {
-            display: block; /* Make the entire link area clickable */
-            color: white; /* White text color for links */
-            text-align: center;
-            padding: 14px 20px; /* Padding around the text inside each link */
-            text-decoration: none; /* Removes the underline from links */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-
-        /* Change the background color of links on hover */
-        nav ul li a:hover {
-            background-color: #575757; /* Slightly lighter dark grey on hover */
-            color: #E81313; /* Red color for text on hover */
-        }
-
-        /* Active link styling (optional) */
-        nav ul li a.active {
-            background-color:#0A0202; /* Black background for the active link */
-            color: white;
-        }
-
-
-        /* --- Content Area Styling (just for demonstration) --- */
-        .content {
-            padding: 40px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #FFFFFF;
-        }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="upcoming.html">Upcoming</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-<h1>Rags 2 Riches</h1>
-<p>Underground Vibes started as a dream of a college student.He started developing the site due to his love for underground music.</p>
-<p>At first it was nothing more than a college project but soon enough, our founder, Camel jr, worked on his craft and finally devevloped a fully working site for everything undergrond that is now widely known as Underground Vibes.<p/>
-<p>Here is a picture of our founder.</p>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="upcoming.html">Upcoming</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<img src="C:\Users\25-1737\Desktop\website\images\lucki.jpg" alt="lucki.jpg">
+  <!-- Page Header -->
+  <header>
+    <h1>Rags 2 Riches</h1>
+  </header>
+
+  <!-- Content Section -->
+  <div class="container">
+    <h2>The Story Behind Underground Vibes</h2>
+    <p>
+      Underground Vibes started as a college dream — a passion project born out of love for raw, unfiltered underground music.
+      What began as a simple assignment soon turned into something bigger. Fueled by dedication, vision, and late-night sessions,
+      our founder <strong>Camel Jr</strong> transformed the idea into a living, breathing platform for real music heads.
+    </p>
+    
+    <p>
+      Today, Underground Vibes is more than just a website — it's a movement. A digital haven where real music thrives, undiscovered
+      talent gets recognized, and underground artists finally get the spotlight they deserve.
+    </p>
+
+    <p>
+      Whether you're an artist looking to be heard, a fan looking for your next obsession, or just someone who craves authenticity
+      in a world full of mainstream noise — you’ve found your home.
+    </p>
+
+    <p>
+      Join the culture. Discover the unheard. Be part of the underground revolution.
+    </p>
+
+    <h3>Meet Our Founder</h3>
+    <p>
+      Here’s a picture of Camel Jr — the mind behind the movement:
+    </p>
+
+    <!-- Replace with a relative path or URL -->
+    <img src="images/lucki.jpg" alt="Founder - Camel Jr">
+
+  </div>
 
 </body>
 </html>
-
