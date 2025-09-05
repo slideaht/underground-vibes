@@ -1,25 +1,19 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Underground Vibes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Underground Vibes</title>
   <style>
-
-
-
-   body {
+    body {
       background-color: #050505;
-      color: #FFFFFF;
-      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
 
+    /* Header (optional) */
     header {
       background-color: #1f1f1f;
       padding: 20px;
@@ -33,171 +27,149 @@
       margin: 0;
     }
 
-    .container {
-      padding: 30px;
-      max-width: 1000px;
-      margin: auto;
+    /* Navigation Menu */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #333;
-      padding: 12px;
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      transition: background 0.3s;
     }
 
-    th {
-      background-color: #222;
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #e81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0a0202;
+      color: white;
+    }
+
+    /* Container */
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
       color: #e50914;
     }
 
-    td {
-      background-color: #1a1a1a;
+    form {
+      display: flex;
+      flex-direction: column;
     }
 
-    tr:hover td {
-      background-color: #2a2a2a;
-    }
-
-    @media screen and (max-width: 768px) {
-      table, th, td {
-        font-size: 12px;
-        padding: 8px;
-      }
-    }
-    /* --- Form formatting --- */	
-	form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
     label {
-      display: block;
-      margin-top: 10px;
+      margin-top: 15px;
       font-weight: bold;
     }
+
     input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-top: 15px;
-      padding: 10px 15px;
-      background-color: #007BFF;
-      color: white;
+      padding: 10px;
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 5px;
+      background-color: #333;
+      color: #fff;
     }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border: 1px solid #e50914;
+      background-color: #444;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #e50914;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
     button:hover {
-      background-color: #0056b3;
+      background-color: #b20710;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      nav ul li a {
+        padding: 10px 14px;
+        font-size: 14px;
+      }
     }
   </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page with Menu Bar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; /* Remove default body margin */
-            background-color: #611404;
-            color: #FFEDED;
-        }
-
-        /* --- Menu Bar Styling --- */
-        nav {
-            background-color: #333; /* Dark background for the navigation bar */
-            overflow: hidden; /* Clears floats inside and contains children */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow below the bar */
-        }
-
-        nav ul {
-            list-style-type: none; /* Removes bullet points */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center the menu items if space allows */
-        }
-
-        nav ul li {
-            display: inline-block; /* Makes list items display horizontally */
-            /* Using inline-block ensures vertical alignment and allows padding/margin */
-        }
-
-        nav ul li a {
-            display: block; /* Make the entire link area clickable */
-            color: white; /* White text color for links */
-            text-align: center;
-            padding: 14px 20px; /* Padding around the text inside each link */
-            text-decoration: none; /* Removes the underline from links */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-
-        /* Change the background color of links on hover */
-        nav ul li a:hover {
-            background-color: #575757; /* Slightly lighter dark grey on hover */
-            color: #E81313; /* Red color for text on hover */
-        }
-
-        /* Active link styling (optional) */
-        nav ul li a.active {
-            background-color:#0A0202; /* Black background for the active link */
-            color: white;
-        }
-
-
-        /* --- Content Area Styling (just for demonstration) --- */
-        .content {
-            padding: 40px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #FFFFFF;
-        }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="upcoming.html">Upcoming</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-<h2>📬 Contact Us</h2>
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="upcoming.html">Upcoming</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+  <!-- Contact Section -->
+  <div class="container">
+    <h2>📬 Contact Us</h2>
+    <p style="text-align: center;">
+      Got a question? Want to feature your music? Or just want to say what's up?<br>
+      Fill out the form below and we'll get back to you.
+    </p>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name..." required>
 
-    <button type="submit">Send Message</button>
-  </form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email..." required>
 
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
 
-  
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
 </body>
 </html>
-
-
