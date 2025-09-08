@@ -6,13 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Underground Vibes</title>
   <style>
-   
     body {
-      background-color: #0f0f0f;
-      color: #ffffff;
+      background-color: #050505;
+      color: #FFFFFF;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #E81313;
+    }
+
+    nav ul li a.active {
+      background-color: #0A0202;
+      color: white;
     }
 
     /* Header */
@@ -31,47 +67,7 @@
       text-transform: uppercase;
     }
 
-    /* Navigation Menu */
-    nav {
-      background-color: #333;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      flex: 1;
-      text-align: center;
-    }
-
-    nav ul li a {
-      display: block;
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #575757;
-      color: #e50914;
-    }
-
-    nav ul li a.active {
-      background-color: #0a0202;
-      color: white;
-    }
-
-    /* Content */
+    /* Main Content */
     .container {
       padding: 50px 20px;
       max-width: 1000px;
@@ -152,7 +148,53 @@
       p {
         font-size: 1em;
       }
+
+      table, th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
     }
+
+    /* Footer */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      border-top: 1px solid #333;
+      margin-top: 50px;
+    }
+
+    footer .footer-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer p {
+      margin: 0 0 10px;
+      font-size: 0.95em;
+    }
+
+    footer .socials a {
+      color: #e50914;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer .socials a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      footer .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
   </style>
 </head>
 
@@ -213,8 +255,23 @@
     </ul>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Underground Vibes. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" title="Instagram">Instagram</a>
+        <a href="#" title="Twitter/X">Twitter</a>
+        <a href="#" title="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 
 </html>
-
-
