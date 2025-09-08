@@ -133,6 +133,45 @@
         font-size: 14px;
       }
     }
+    footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #333;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer p {
+  margin: 0 0 10px;
+  font-size: 0.95em;
+}
+
+footer .socials a {
+  color: #e50914;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  footer .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -170,6 +209,24 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
+    <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Underground Vibes. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" title="Instagram">Instagram</a>
+        <a href="#" title="Twitter/X">Twitter</a>
+        <a href="#" title="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 
 </body>
 </html>
+
