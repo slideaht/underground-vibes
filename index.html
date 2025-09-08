@@ -95,10 +95,36 @@
       max-width: 100%;
     }
 
+    .events-section {
+      margin-top: 50px;
+    }
+
+    .event-card {
+      background-color: #333;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .event-card h3 {
+      color: #e50914;
+      margin: 10px 0;
+    }
+
+    .event-card p {
+      color: #ddd;
+    }
+
     @media screen and (max-width: 768px) {
       table, th, td {
         font-size: 12px;
         padding: 8px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 250px;
       }
     }
   </style>
@@ -146,21 +172,18 @@
       <tr>
         <td>Nine Vicious</td>
         <td>
-       <iframe width="560" height="315" 
+          <iframe width="560" height="315" 
     src="https://www.youtube.com/embed/240UD5da0Gs" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
 </iframe>
-
-
-
         </td>
       </tr>
       <tr>
         <td>2sdxrt3all</td>
         <td>
-         <iframe width="560" height="315" 
+          <iframe width="560" height="315" 
     src="https://www.youtube.com/embed/nT-fiRVOSCo" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -178,7 +201,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
 </iframe>
-
         </td>
       </tr>
       <tr>
@@ -190,7 +212,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
 </iframe>
-
         </td>
       </tr>
       <tr>
@@ -214,19 +235,58 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
 </iframe>
-
         </td>
       </tr>
     </table>
   </div>
 
+  <!-- Upcoming Events Section -->
+  <div class="container events-section">
+    <h2>Upcoming Events by Underground Artists</h2>
+
+    <!-- Event Cards -->
+    <div class="event-card">
+      <h3>Lucki - Live Performance</h3>
+      <p><strong>Date:</strong> Oct 15, 2025</p>
+      <p><strong>Location:</strong> Underground Club, Chicago</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Nine Vicious - Album Release Party</h3>
+      <p><strong>Date:</strong> Nov 1, 2025</p>
+      <p><strong>Location:</strong> Music Hall, New York</p>
+    </div>
+
+    <div class="event-card">
+      <h3>2sdxrt3all - Exclusive Interview</h3>
+      <p><strong>Date:</strong> Dec 5, 2025</p>
+      <p><strong>Location:</strong> Podcast Live Show</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Che - DJ Set</h3>
+      <p><strong>Date:</strong> Dec 15, 2025</p>
+      <p><strong>Location:</strong> The Warehouse, Los Angeles</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Chuckyy - Underground Party</h3>
+      <p><strong>Date:</strong> Jan 10, 2026</p>
+      <p><strong>Location:</strong> The Loft, Miami</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Loe Shimmy (Honorable Mention) - Live Stream</h3>
+      <p><strong>Date:</strong> Feb 5, 2026</p>
+      <p><strong>Location:</strong> Online (Twitch)</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Veeze (Honorable Mention) - East Coast Tour</h3>
+      <p><strong>Date:</strong> March 1, 2026</p>
+      <p><strong>Location:</strong> Various Locations (East Coast)</p>
+    </div>
+  </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
